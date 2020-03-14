@@ -17,3 +17,7 @@ body{
 .deleteForm{
 	display: inline;
 }
+
+.existing-image{
+	padding: 3px;
+}
