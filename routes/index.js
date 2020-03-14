@@ -11,7 +11,7 @@ router.get('/', (req, res) =>{
 
 // Show Register Form
 router.get("/register", (req, res)=>{
-	res.render("register");
+	res.render("register", {page: "register"});
 });
 
 // Sign Up Logic
@@ -31,7 +31,7 @@ router.post("/register", function(req, res){
 
 // Show Login Form
 router.get("/login", (req, res)=>{
-	res.render("login");
+	res.render("login", {page: "login"});
 });
 
 // Post Login Data

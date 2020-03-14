@@ -12,7 +12,7 @@ router.get("/", (req, res) =>{
 			console.log(err);
 		}
 		else{
-			res.render("campgrounds/index", {campgrounds: campgrounds});	
+			res.render("campgrounds/index", {campgrounds: campgrounds, page: "campgrounds"});	
 		}
 	});
 });
@@ -22,12 +22,13 @@ router.post("/", middleware.isLoggedIn, (req, res) =>{
 	// Get Data from Form and add to Campgrounds Array
 	var name = req.body.name;
 	var image = req.body.image;
+	var price = req.body.price;
 	var description = req.body.description;
 	var author = {
 		id: req.user._id,
 		username: req.user.username
 	};
-	var newCampground = {name: name, image: image, description: description, author: author};
+	var newCampground = {name: name, image: image, description: description, author: author, price: price};
 	// Create new Campground and save to DB
 	Campground.create(newCampground, (err, newlyCreated)=>{
 		if(err || !newlyCreated){
