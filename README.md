@@ -20,3 +20,12 @@ Upload of basic finished app, without final touches. Most functionality is in pl
 
 ###### CSS Framework
 - Boostrap 3
+
+## Future Updates
+- Add dynamic pricing
+- Add campground rating system
+- Upgrade to Bootstrap 4
+- Add image uploader
+- Add user profile page
+- Add user avatars
+- Add campground information panel data
