@@ -27,7 +27,8 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect("mongodb+srv://Onodor:L3t$g0d3ll@cluster0-stiry.mongodb.net/yelp_camp?retryWrites=true&w=majority");
+mongoose.connect(process.env.DATABASEURL);
+
 app.use(methodOverride("_method"));
 app.use(flash());
 
