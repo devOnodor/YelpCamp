@@ -37,7 +37,6 @@ app.use(flash());
 var Campground 		= require("./models/campground");
 var Comment 		= require("./models/comment");
 var User	 		= require("./models/user");
-var seedDB 			= require("./seeds");
 
 // Passport Config
 /***************************************************************************************/
